@@ -35,7 +35,7 @@ export function valida(input) {
         },  
   }
 
-  function mostrarMensajeDeError(tipoDeInput, input){
+ export function mostrarMensajeDeError(tipoDeInput, input){
     let mensaje = " ";
     tipoDeErrores.forEach((error) =>{
         if(input.validity[error]){
@@ -49,7 +49,7 @@ export function valida(input) {
 
   const validadores = {
     nacimiento: (input) => validarNacimiento(input),
-  };
+  }
 
 const validarNacimiento = (input)=>{
     const fechaCliente = new Date (input.value);
@@ -66,17 +66,3 @@ const validacionMayorDeEdad = (fecha)=>{
     const diferenciaDeFechas = new Date(fecha.getUTCFullYear()+18, fecha.getUTCMonth(), fecha.getUTCDate());
     return(diferenciaDeFechas<= fechaActual);
 }
-
-//import { valida } from "./validar.js";
-
-
-// const inputs = document.querySelectorAll("input");
-
-// inputs.forEach((input) => {
-//   input.addEventListener("blur", (input) => {
-//     valida(input.target);
-//   });
-// });
-
-
-// 

@@ -1,4 +1,5 @@
 import { valida } from "./validar.js";
+import { mostrarMensajeDeError } from "./validar.js";
 
 
 const inputs = document.querySelectorAll("input");
@@ -7,20 +8,19 @@ let control;
 
  inputs.forEach((input) => {
   input.addEventListener("blur", (input) => {
-    control=valida(input.target);
+    valida(input.target);
   });
   
 });
 
-if(inputs==" "){
-    console.log("ocurrion un error")
-}else{
-    boton.addEventListener("click", ()=>{
+control=mostrarMensajeDeError();
+boton.addEventListener("click", ()=>{
+    if(control){
+        console.log("ocurrio un error")
+    }else{       
         registrar()
-        })
-}
-
-
+    }
+})
 
 const registrar =()=>{
 
@@ -56,7 +56,7 @@ const agregarUsuario = (nuevoUsuario) =>{
     const usuarioCarga= JSON.stringify(usuariosRegistrados);
     localStorage.setItem('usuario', usuarioCarga);
 }
-renderUsuario(usuariosRegistrados);
+// renderUsuario(usuariosRegistrados);
 
 
 
