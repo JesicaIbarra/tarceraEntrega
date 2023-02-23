@@ -1,0 +1,30 @@
+.contenedorBanner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/banner/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+
+    .bannerTitulo, .bannerParrafo{
+        color: #ffffff;
+        font-size: 52px;
+        padding-bottom: 1rem;
+        text-shadow: 0 4px 4px rgb(0 0 0 / 75%);
+    }
+
+    .bannerParrafo{
+        font-size: 22px;
+    }
+
+    .bannerBoton{
+        padding:15px;
+        background-color: #2A7AE4;
+        color: #ffffff;
+    }
+}

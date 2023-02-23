@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0px;
+
+    p{
+        font-size: 22px;
+        font-weight: bold;
+    }
+}

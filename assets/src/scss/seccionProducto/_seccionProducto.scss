@@ -1,0 +1,35 @@
+.contenedorProductos{
+    padding-bottom: 6rem;
+    
+    .contenedorTituloProducto{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+
+        .productoTitulo{
+            font-size: 32px;
+        }
+
+        .productoVerTodo{
+            font-size: 16px;
+            color:#2A7AE4;
+            font-weight: 700;
+
+            .fa-arrow-right{
+              font-size: 16px;
+              color:#2A7AE4;
+              font-weight: 700;
+              margin-left: 10px;  
+            }
+        }
+    }
+
+    .contenedorCardProducto{
+        display: flex;
+        justify-content: space-between;
+        
+        // .producto{
+        // }
+    }
+}

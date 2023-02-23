@@ -1,0 +1,79 @@
+.contenedorNosotros{
+    padding: 3rem 6rem;
+    background-color: #EAF2FD;
+    width: 100%;
+    display: flex;
+    align-items: start;
+
+    
+
+    .contenedorLogo{
+        display: flex;
+        align-items: center;
+        width:25vw;
+
+        .logoImagen{
+            width:40px;
+            height: 30px;
+        }
+
+        .logoFirma{
+            font-size: 28px;
+            font-weight: 700;
+            strong{
+                color:#2A7AE4;
+            }
+        } 
+    }
+    
+    .contenedorQuienesSomos{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+
+        ul{
+            li{
+                list-style: none;
+                padding-bottom: 2rem;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    form{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        
+        .formTitulo{
+            font-size: 16px;
+            font-weight: 700;
+            padding-bottom: 0.5rem ;
+        }
+
+        .formNombre{
+            padding:10px 0px 40px 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .formArea{
+            padding:10px 0px 0px 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .formBoton{
+            width: 10rem;
+            padding:15px;
+            background-color: #2A7AE4;
+            border: none;
+            color: #ffffff;
+        }
+    }
+}

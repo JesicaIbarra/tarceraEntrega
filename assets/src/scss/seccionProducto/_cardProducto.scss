@@ -1,0 +1,20 @@
+.producto{
+    .producto__informacion{
+        
+        .producto__nombre{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .producto__precio{
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .productoVer{
+            font-size: 16px;
+            color:#2A7AE4;
+            font-weight: 700;
+        }
+    }
+}

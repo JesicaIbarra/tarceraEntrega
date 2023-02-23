@@ -1,0 +1,316 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #464646;
+}
+
+header {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  padding: 0px 6rem;
+  background-color: #ffffff;
+  align-items: center;
+  font-weight: 700;
+}
+header .contenedorLogo {
+  display: flex;
+  align-items: center;
+}
+header .contenedorLogo .logoImagen {
+  width: 40px;
+  height: 30px;
+}
+header .contenedorLogo .logoFirma {
+  font-size: 28px;
+  font-weight: 700;
+}
+header .contenedorLogo .logoFirma strong {
+  color: #2A7AE4;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+header nav .contenedorNavegador {
+  width: 30vw;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .contenedorNavegador .navegadorInput {
+  height: 90%;
+  border: none;
+  background-color: #F5F5F5;
+  padding: 0px 10px;
+}
+header nav .contenedorNavegador .navegadorBuscar {
+  border: none;
+  background-color: #F5F5F5;
+  padding-right: 10px;
+}
+header nav .contenedorNavegadorLogin {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
+header nav .contenedorNavegadorLogin .navegadorLogin {
+  border: 1px solid #2A7AE4;
+  color: #2A7AE4;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+header nav .contenedorNavegadorLogin .navegadorLogin:hover {
+  transition: 1s;
+  background-color: #2A7AE4;
+  color: #F5F5F5;
+}
+
+.contenedorBanner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/banner/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+}
+.contenedorBanner .bannerTitulo, .contenedorBanner .bannerParrafo {
+  color: #ffffff;
+  font-size: 52px;
+  padding-bottom: 1rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+.contenedorBanner .bannerParrafo {
+  font-size: 22px;
+}
+.contenedorBanner .bannerBoton {
+  padding: 15px;
+  background-color: #2A7AE4;
+  color: #ffffff;
+}
+
+main {
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+.contenedorProductos {
+  padding-bottom: 6rem;
+}
+.contenedorProductos .contenedorTituloProducto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.contenedorProductos .contenedorTituloProducto .productoTitulo {
+  font-size: 32px;
+}
+.contenedorProductos .contenedorTituloProducto .productoVerTodo {
+  font-size: 16px;
+  color: #2A7AE4;
+  font-weight: 700;
+}
+.contenedorProductos .contenedorTituloProducto .productoVerTodo .fa-arrow-right {
+  font-size: 16px;
+  color: #2A7AE4;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.contenedorProductos .contenedorCardProducto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.producto .producto__informacion .producto__nombre {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.producto .producto__informacion .producto__precio {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.producto .producto__informacion .productoVer {
+  font-size: 16px;
+  color: #2A7AE4;
+  font-weight: 700;
+}
+
+.contenedorNosotros {
+  padding: 3rem 6rem;
+  background-color: #EAF2FD;
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+.contenedorNosotros .contenedorLogo {
+  display: flex;
+  align-items: center;
+  width: 25vw;
+}
+.contenedorNosotros .contenedorLogo .logoImagen {
+  width: 40px;
+  height: 30px;
+}
+.contenedorNosotros .contenedorLogo .logoFirma {
+  font-size: 28px;
+  font-weight: 700;
+}
+.contenedorNosotros .contenedorLogo .logoFirma strong {
+  color: #2A7AE4;
+}
+.contenedorNosotros .contenedorQuienesSomos {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+.contenedorNosotros .contenedorQuienesSomos ul li {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+.contenedorNosotros .contenedorQuienesSomos ul li a {
+  text-decoration: none;
+}
+.contenedorNosotros form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+.contenedorNosotros form .formTitulo {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.contenedorNosotros form .formNombre {
+  padding: 10px 0px 40px 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.contenedorNosotros form .formArea {
+  padding: 10px 0px 0px 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.contenedorNosotros form .formBoton {
+  width: 10rem;
+  padding: 15px;
+  background-color: #2A7AE4;
+  border: none;
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0px;
+}
+footer p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.formulario .formLabel {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+.formulario .contenedorInputs {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.formulario .contenedorInputs .input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #2A7AE4;
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+}
+.formulario .contenedorInputs .input::placeholder {
+  visibility: hidden;
+  color: rgba(0, 0, 0, 0);
+}
+.formulario .contenedorInputs .input:focus {
+  outline: none;
+}
+.formulario .contenedorInputs .inputLabel {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: 20px;
+  transition: all 0.25s;
+}
+.formulario .contenedorInputs .input:not(:placeholder-shown) + .inputLabel,
+.formulario .contenedorInputs .input:focus + .inputLabel {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+.formulario .input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+.formulario .input-container--invalid .input {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+}
+.formulario .input-container--invalid .inputLabel {
+  color: red;
+}
+.formulario .input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+.formulario .input-container--invalid .input {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+}
+.formulario .input-container--invalid .inputLabel {
+  color: red;
+}
+.formulario .input-container--invalid .inputLabel .input-message-error {
+  display: none;
+}
+.formulario .input-container--invalid .inputLabel .input-message-error {
+  color: var(--warning-color);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+.formulario .boton {
+  display: block;
+  background-color: #2A7AE4;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 20rem;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+.formulario{
+    .formLabel{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    .contenedorInputs{
+        position: relative;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        
+       
+        .input{
+                    
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid #2A7AE4;
+            padding: 1.375rem 0.5rem 0.5rem;
+            height: 3.25rem;
+            width: 100%;
+
+            &::placeholder {
+                visibility: hidden;
+                color: #00000000;
+              }
+            
+              &:focus {
+                outline: none;
+            
+              }
+        }
+
+        .inputLabel {
+            position: absolute;
+            top: 1.375rem;
+            left: 0.5rem;
+            font-size:20px;
+            transition: all 0.25s;
+        }
+
+        
+
+        .input:not(:placeholder-shown) + .inputLabel,
+        .input:focus + .inputLabel {
+          font-size: 0.875rem;
+          top: 0.25rem;
+          transition: all 0.25s;
+
+        }
+        
+  
+   
+    }
+
+    .input-container--invalid {
+        margin-bottom: 0.5rem;
+        
+        .input {
+            border: 1px solid var(--warning-color);
+            border-radius: 7px;
+          }
+
+          .inputLabel {
+            color: red;
+          }
+
+        }
+
+         .input-container--invalid {
+        margin-bottom: 0.5rem;
+        
+        .input {
+            border: 1px solid var(--warning-color);
+            border-radius: 7px;
+          }
+
+          .inputLabel {
+            color: red;
+
+            .input-message-error{
+                display: none;
+            
+                &{
+                color: var(--warning-color);
+                display: block;
+                margin-top: 0.5rem;
+                padding-left: 0.5rem;
+                }
+            }
+          }
+
+        }
+
+        .boton {
+            display: block;
+            background-color:#2A7AE4;
+            border: none;
+            border-radius: 7px;
+            width: 100%;
+            margin-top: 1rem;
+            max-width: 20rem;
+            padding: 1.125rem;
+            box-sizing: border-box;
+            color:  #ffffff;
+            font-size: 25px;
+            align-self: center;
+            text-align: center;
+        }
+         
+}

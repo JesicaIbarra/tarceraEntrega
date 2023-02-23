@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./assets/img/logo/logo.png">
+    <title>AluraGreek</title>
+</head>
+<body>
+    <header>
+        <div class="contenedorLogo">
+            <img class="logoImagen" src="../img/logo/logo.png" alt="logo de la empresa">
+            <p class="logoFirma"><strong>Alura</strong>Geek</p>
+        </div>
+        <nav>
+            <div class="contenedorNavegadorLogin">
+                <a class="navegadorLogin" href="../../index.html">home</a>
+            </div> 
+            
+        </nav>
+    </header>
+    <main>
+        <form action="" class="formulario">
+            <legend  class="formLabel">Ingrese sus datos personales</legend>
+            <div class="contenedorInputs">
+                <input type="text" id="nombre" class="input" placeholder="Nombre" required data-tipo="nombre">
+                <label for="nombre" class="inputLabel">Nombre</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div class="contenedorInputs">
+                <input type="text" id="apellido" class="input" placeholder="Apellido" required data-tipo="apellido">
+                <label for="apellido" class="inputLabel">Apellido</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div class="contenedorInputs">
+                <input  name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+                <label for="birth" class="inputLabel">Fecha de nacimiento</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div class="contenedorInputs">
+                <input type="email" id="email" class="input" placeholder="Correo Electrónico" data-tipo="email" required>
+                <label for="correo" class="inputLabel">Correo Electrónico</label>
+                <span class="input-message-error"></span>
+            </div>
+            <div class="contenedorInputs">
+                <input type="password" id="password" class="input" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Debe contener al menos una mayuscula, una minuscula, un numero del 0 al 9, minimo 6 caracteres maximo 12 y no puede contener caracteres especiales" data-tipo="password">
+                <label for="password" class="inputLabel">Contraseña</label>
+                <span class="input-message-error"></span>
+            </div>
+
+            <button class="boton" >Registrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Jesica Giselle Ibarra</p>
+        <p>2023</p>
+    </footer>
+
+    <script type="module" src="../js/registro.js"></script>
+
+    
+</body>
+</html>
