@@ -230,6 +230,9 @@ footer p {
   font-weight: bold;
 }
 
+.formulario {
+  width: 70vw;
+}
 .formulario .formLabel {
   font-size: 20px;
   margin-bottom: 2rem;
@@ -313,4 +316,56 @@ footer p {
   font-size: 25px;
   align-self: center;
   text-align: center;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .contenedorExito {
+  width: 50vw;
+  height: 30vh;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .contenedorExito .fa-regular {
+  font-size: 4rem;
+  color: green;
+}
+main .contenedorExito .tituloExito {
+  font-size: 2rem;
+}
+main .contenedorExito .boton {
+  display: block;
+  background-color: #2A7AE4;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 20rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .navLogin {
+  justify-content: center;
+}
+header .navLogin .contenedorNavegadorLogin {
+  width: 100%;
+  justify-content: right;
+}
+header .navLogin .contenedorNavegadorLogin a {
+  margin-left: 1rem;
 }

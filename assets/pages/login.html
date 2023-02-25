@@ -16,23 +16,24 @@
             <img class="logoImagen" src="../img/logo/logo.png" alt="logo de la empresa">
             <p class="logoFirma"><strong>Alura</strong>Geek</p>
         </div>
-        <nav>
+        <nav class="navLogin">
             <div class="contenedorNavegadorLogin">
-                <a class="navegadorLogin" href="./assets/pages/login.html">home</a>
+                <a class="navegadorLogin" href="./assets/pages/login.html">Home</a>
                 <a class="navegadorLogin" href="../pages/registro.html">Resgistraté</a>
             </div> 
-            
         </nav>
     </header>
     <main>
-        <form action="">
-            <label for="usuario">Usuaio</label>
-            <input type="text" id="usuario">
-            <br>
-            <label for="password">Contraseña</label>
-            <input type="password" id="password">
-            <br>
-            <button type="button">Ingresar</button>
+        <form action="" class="formulario">
+            <div class="contenedorInputs">
+                <input type="email" id="email" class="input" placeholder="Correo Electrónico" data-tipo="email" required>
+                <label for="correo" class="inputLabel">Correo Electrónico</label>
+            </div>
+            <div class="contenedorInputs">   
+                <input type="password" id="password" class="input" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Debe contener al menos una mayuscula, una minuscula, un numero del 0 al 9, minimo 6 caracteres maximo 12 y no puede contener caracteres especiales" data-tipo="password">
+                <label for="password" class="inputLabel">Contraseña</label>
+            </div> 
+            <button type="button" class="boton">Ingresar</button>
 
         </form>
     </main>
@@ -42,7 +43,5 @@
     </footer>
     
     <script src="../js/login.js"></script>
-
-    
 </body>
 </html>

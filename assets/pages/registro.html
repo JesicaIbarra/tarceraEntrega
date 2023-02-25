@@ -24,10 +24,10 @@
         </nav>
     </header>
     <main>
-        <form action="" class="formulario">
+        <form action="" class="formulario" id="formulario"  data-tipo="form">
             <legend  class="formLabel">Ingrese sus datos personales</legend>
             <div class="contenedorInputs">
-                <input type="text" id="nombre" class="input" placeholder="Nombre" required data-tipo="nombre">
+                <input type="text" id="nombre" class="input" placeholder="Nombre" required data-tipo= "nombre">
                 <label for="nombre" class="inputLabel">Nombre</label>
                 <span class="input-message-error"></span>
             </div>
@@ -52,7 +52,7 @@
                 <span class="input-message-error"></span>
             </div>
 
-            <button class="boton" >Registrar</button>
+            <button type="submit" class="boton" >Registrar</button>
         </form>
     </main>
 
@@ -61,7 +61,7 @@
         <p>2023</p>
     </footer>
 
-    <script type="module" src="../js/registro.js"></script>
+    <script src="../js/registrar.js"></script>
 
     
 </body>
