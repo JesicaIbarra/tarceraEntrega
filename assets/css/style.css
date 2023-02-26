@@ -318,15 +318,15 @@ footer p {
   text-align: center;
 }
 
-main {
+.mainExito {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .contenedorExito {
+.mainExito .contenedorExito {
   width: 50vw;
-  height: 30vh;
+  height: 50vh;
   background-color: #ffffff;
   border-radius: 15px;
   display: flex;
@@ -334,14 +334,14 @@ main .contenedorExito {
   align-items: center;
   justify-content: space-evenly;
 }
-main .contenedorExito .fa-regular {
+.mainExito .contenedorExito .fa-regular {
   font-size: 4rem;
   color: green;
 }
-main .contenedorExito .tituloExito {
+.mainExito .contenedorExito .tituloExito {
   font-size: 2rem;
 }
-main .contenedorExito .boton {
+.mainExito .contenedorExito .boton {
   display: block;
   background-color: #2A7AE4;
   border: none;

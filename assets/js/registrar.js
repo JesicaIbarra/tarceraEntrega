@@ -115,3 +115,4 @@ const agregarUsuario = (nuevoUsuario) =>{
     const usuarioCarga= JSON.stringify(usuariosRegistrados);
     localStorage.setItem('usuario', usuarioCarga);
 }
+renderUsuario(usuariosRegistrados);
