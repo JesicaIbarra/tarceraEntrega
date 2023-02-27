@@ -16,30 +16,23 @@ boton.addEventListener("click", element =>{
         nombreUsuario.parentElement.classList.add("input-container--invalid");
         nombreUsuario.parentElement.querySelector(".input-message-error").innerHTML ="Esté campo NOMBRE no puede estar vacio";
         entro=true;
-        
     }else{
         quitarAlerta(nombreUsuario);
     }
-
     if(apellidoUsuario.value.length <3){
         apellidoUsuario.parentElement.classList.add("input-container--invalid");
         apellidoUsuario.parentElement.querySelector(".input-message-error").innerHTML ="Esté campo APELLIDO no puede estar vacio";
         entro=true;
-
     }else{
         quitarAlerta(apellidoUsuario);
-
     }
-
     if(mayorDeEdad== false){
         cumpleUsuario.parentElement.classList.add("input-container--invalid");
         cumpleUsuario.parentElement.querySelector(".input-message-error").innerHTML ="Para registrarse debe tener almenos 18 años de edad";
-        control=false;
+        entro=true;
     }else{
         quitarAlerta(cumpleUsuario);
-        control=true;
     }
-
     if(!regExEmail.test(emailUsuario.value)){
         emailUsuario.parentElement.classList.add("input-container--invalid");
         emailUsuario.parentElement.querySelector(".input-message-error").innerHTML ="El correo no es valido";
@@ -47,17 +40,13 @@ boton.addEventListener("click", element =>{
     }else{
         quitarAlerta(emailUsuario);
     }
-
     if(!regExPass.test(passwordUsuario.value)){
-        passwordUsuario.parentElement.classList.add("input-container--invalid");
-        passwordUsuario.parentElement.querySelector(".input-message-error").innerHTML ="La constraseña debe contener al menos una mayuscula, una minuscula, un numero del 0 al 9, minimo 6 caracteres maximo 12 y no puede contener caracteres especiales";
         entro=true;
+        passwordUsuario.parentElement.classList.add("input-container--invalid");
+        passwordUsuario.parentElement.querySelector(".input-message-error").innerHTML ="La constraseña debe contener al menos una mayuscula, una minuscula, un numero del 0 al 9, minimo 6 caracteres maximo 12 y no puede contener caracteres especiales";   
     }else{
         quitarAlerta(passwordUsuario);
-        
     }
-
-
     if(entro==false){
         registrar();
         window.location.href="../pages/registroConcluido.html"
@@ -105,9 +94,7 @@ let usuariosRegistrados=[];
 let usuariEnLS=JSON.parse(localStorage.getItem('usuario'))
 if(usuariEnLS){
     usuariosRegistrados=usuariEnLS;
-
 }
-
 
 const agregarUsuario = (nuevoUsuario) =>{
     usuariosRegistrados.push(nuevoUsuario);
@@ -115,4 +102,4 @@ const agregarUsuario = (nuevoUsuario) =>{
     const usuarioCarga= JSON.stringify(usuariosRegistrados);
     localStorage.setItem('usuario', usuarioCarga);
 }
-renderUsuario(usuariosRegistrados);
+
