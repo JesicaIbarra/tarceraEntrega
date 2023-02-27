@@ -325,7 +325,7 @@ footer p {
   justify-content: center;
 }
 .mainExito .contenedorExito {
-  width: 50vw;
+  width: 70vw;
   height: 50vh;
   background-color: #ffffff;
   border-radius: 15px;
@@ -368,4 +368,15 @@ header .navLogin .contenedorNavegadorLogin {
 }
 header .navLogin .contenedorNavegadorLogin a {
   margin-left: 1rem;
+}
+
+table {
+  width: 100%;
+}
+table thead {
+  background-color: #2A7AE4;
+}
+table thead tr .tablaUsuariosTitulo {
+  color: #ffffff;
+  padding: 1rem;
 }
