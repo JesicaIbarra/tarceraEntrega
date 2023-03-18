@@ -302,7 +302,12 @@ footer p {
   margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
-.formulario .boton {
+.formulario .bontonesRegistro {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+}
+.formulario .bontonesRegistro .boton {
   display: block;
   background-color: #2A7AE4;
   border: none;
@@ -318,13 +323,13 @@ footer p {
   text-align: center;
 }
 
-.mainExito {
-  height: 90vh;
+.login {
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mainExito .contenedorExito {
+.login .contenedorExito {
   width: 70vw;
   height: 50vh;
   background-color: #ffffff;
@@ -334,14 +339,14 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
 }
-.mainExito .contenedorExito .fa-regular {
+.login .contenedorExito .fa-regular {
   font-size: 4rem;
   color: green;
 }
-.mainExito .contenedorExito .tituloExito {
+.login .contenedorExito .tituloExito {
   font-size: 2rem;
 }
-.mainExito .contenedorExito .boton {
+.login .contenedorExito .boton {
   display: block;
   background-color: #2A7AE4;
   border: none;

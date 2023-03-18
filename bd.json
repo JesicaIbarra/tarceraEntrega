@@ -1,0 +1,28 @@
+{
+    "producto":[
+        {
+            "name":"productos",
+            "imagenUrl":"",
+            "price":"100.00",
+            "alt":"Product",
+            "section":"Star Wars",
+            "description":"Voluptas Voluptas"
+        },
+        {
+            "name":"alura",
+            "imagenUrl":"",
+            "price":"100.00",
+            "alt":"Product",
+            "section":"Star Wars",
+            "description":"Voluptas Voluptas"
+        },
+        {
+            "name":"productos",
+            "imagenUrl":"",
+            "price":"100.00",
+            "alt":"Product",
+            "section":"Star Wars",
+            "description":"Voluptas Voluptas"
+        }
+    ]
+}

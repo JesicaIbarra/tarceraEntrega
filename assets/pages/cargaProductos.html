@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./assets/img/logo/logo.png">
+    <title>AluraGreek</title>
+</head>
+<body>
+    <header>
+        <div class="contenedorLogo">
+            <img class="logoImagen" src="../img/logo/logo.png" alt="logo de la empresa">
+            <p class="logoFirma"><strong>Alura</strong>Geek</p>
+        </div>
+        <nav class="navLogin">
+            
+            <div class="contenedorNavegadorLogin">
+                <a class="navegadorLogin" href="../../index.html">home</a>
+            </div> 
+            
+        </nav>
+    </header>
+    <main>
+        <form action="" class="formulario" id="formulario"  data-tipo="producto">
+            <legend  class="formLabel">Ingrese nuevos Productos</legend>
+            <div class="contenedorInputs">
+                <input type="text" id="nombre" class="input" placeholder="Nombre" required data-tipo= "nombre">
+                <label for="nombre" class="inputLabel">Nombre del Prducto</label>
+            </div>
+            
+            <div class="contenedorInputs">
+                <input type="text" id="image" class="input" placeholder="Direccion de la Imagen" data-tipo="image" required>
+                <label for="image" class="inputLabel">Dirección de la imagen</label>
+                <span class="input-message-error"></span>
+            </div>
+
+            <div class="contenedorInputs">
+                <input type="text" id="description" class="input" placeholder="Descripción" data-tipo="description" required>
+                <label for="description" class="inputLabel">Descripcion</label>
+            </div>
+
+            <div class="contenedorInputs">
+                <input type="text" id="precio" class="input" placeholder="Precio" data-tipo="precio" required>
+                <label for="precio" class="inputLabel">Precio</label>
+            </div>
+
+            <div class="contenedorInputs">
+                <input type="text" id="alt" class="input" placeholder="Descripción de alt" data-tipo="alt" required>
+                <label for="alt" class="inputLabel">Descripción de alt</label>
+            </div>
+
+            <button type="submit" class="boton" id="boton" >Registrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Jesica Giselle Ibarra</p>
+        <p>2023</p>
+    </footer>
+    <script type="module" src="../js/control/registroProducto.js"></script>
+    <script type="module" src="../js/servicios/productoSevicios.js"></script>
+
+</body>
+</html>

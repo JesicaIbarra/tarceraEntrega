@@ -93,8 +93,12 @@
           }
 
         }
+        .bontonesRegistro{
+          display: flex;
+          width: 70vw;
+          justify-content: space-between;
 
-        .boton {
+          .boton {
             display: block;
             background-color:#2A7AE4;
             border: none;
@@ -109,5 +113,6 @@
             align-self: center;
             text-align: center;
         }
+      }      
          
 }

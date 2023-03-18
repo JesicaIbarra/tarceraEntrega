@@ -22,7 +22,7 @@
                 <button class="navegadorBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div> 
             <div class="contenedorNavegadorLogin">
-                <a class="navegadorLogin" href="./assets/pages/login.html">Login</a>
+                <a class="navegadorLogin" id="botonLogin" href="#login">Login</a>
             </div> 
             
         </nav>
@@ -38,7 +38,7 @@
                <h2 class="productoTitulo">Ofertas</h2>
                 <a class="productoVerTodo">Ver Todo <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="contenedorCardProducto" data-productos>
+            <div class="contenedorCardProducto">
                <div class="producto" id="img-1">
                     <img class="producto__imagen" src="./assets/img/starWars/unsplash_1.png" alt="Muñeco coleccionable black">
                     <div class="producto__informacion">
@@ -86,11 +86,32 @@
                         <P class="producto__precio">$ 7299</P>
                         <a class="productoVer">Ver Producto</a>
                     </div>
-                    
-                </div>
-                 
-                 
+                </div>  
             </div>
+            
+        </section>
+        <section class="contenedorProductos">
+            <div class="contenedorCardProducto" data-productos>
+            </div>
+        </section>
+
+        <section class="login" id="login">
+            <form action="" class="formulario">
+                <div class="contenedorInputs">
+                    <input type="email" id="email" class="input" placeholder="Correo Electrónico" data-tipo="email" required>
+                    <label for="correo" class="inputLabel">Correo Electrónico</label>
+                    <span class="input-message-error"></span>
+                </div>
+                <div class="contenedorInputs">   
+                    <input type="password" id="password" class="input" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Debe contener al menos una mayuscula, una minuscula, un numero del 0 al 9, minimo 6 caracteres maximo 12 y no puede contener caracteres especiales" data-tipo="password">
+                    <label for="password" class="inputLabel">Contraseña</label>
+                    <span class="input-message-error"></span>
+                </div> 
+                <div class="bontonesRegistro">
+                    <button type="button" class="boton" id="boton">Ingresar</button>
+                    <a class="navegadorLogin boton" href="../pages/registro.html">Resgistraté</a>
+                </div>    
+            </form>
         </section>
       
     </main>
@@ -123,6 +144,7 @@
         <p>Desarrollado por Jesica Giselle Ibarra</p>
         <p>2023</p>
     </footer>
-   <script type="module" src="./controllers/productos-controllers.js"></script> 
+   <script type="module" src="./assets/js/login.js"></script> 
+   <script type="module" src="./assets/js/control/controlProductos.js"></script>
 </body>
 </html>

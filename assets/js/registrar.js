@@ -90,7 +90,6 @@ const registrar =()=>{
 }
 
 let usuariosRegistrados=[];
-
 let usuariEnLS=JSON.parse(localStorage.getItem('usuario'))
 if(usuariEnLS){
     usuariosRegistrados=usuariEnLS;
